@@ -1,0 +1,46 @@
+ <main>
+        <h1>ERP Tools</h1>
+        <p>Welcome to our ERP tools section. Here you can access interactive features for budgeting, acquisition management, and financial reporting.</p>
+        
+        <!-- Budget Tool Section -->
+        <section id="budget-tool">
+            <h2>Budget Calculator</h2>
+            <p>Enter your income and expenses to calculate your budget surplus/deficit.</p>
+            <form id="budget-form">
+                <label for="income">Monthly Income:</label>
+                <input type="number" id="income" placeholder="e.g., 5000"><br>
+                <label for="expenses">Monthly Expenses:</label>
+                <input type="number" id="expenses" placeholder="e.g., 4000"><br>
+                <button type="button" onclick="calculateBudget()">Calculate</button>
+            </form>
+            <p id="budget-result"></p>
+        </section>
+        
+        <!-- Acquisition Tool Section -->
+        <section id="acquisition-tool">
+            <h2>Acquisition Tracker</h2>
+            <p>Track asset acquisitions with a simple list. (This is a placeholder; expand with local storage for persistence.)</p>
+            <form id="acquisition-form">
+                <label for="asset">Asset Name:</label>
+                <input type="text" id="asset" placeholder="e.g., Office Equipment"><br>
+                <label for="cost">Cost:</label>
+                <input type="number" id="cost" placeholder="e.g., 1000"><br>
+                <button type="button" onclick="addAcquisition()">Add</button>
+            </form>
+            <ul id="acquisition-list"></ul>
+            <p>Total Cost: <span id="total-cost">0</span></p>
+        </section>
+        
+        <!-- Financial Reporting Section -->
+        <section id="financial-reporting">
+            <h2>Financial Report Generator</h2>
+            <p>Generate a basic report from inputs. (Placeholder for more complex features.)</p>
+            <button type="button" onclick="generateReport()">Generate Report</button>
+            <div id="report-output"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Your existing footer content -->
+        <p>&copy; 2026 Capital City Accounting</p>
+    </footer>
